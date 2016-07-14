@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="182" class="home" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
+  <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/logofullwhite.svg" /></td></tr></table></div>
+  <div id="nonsplash">
+  <script>document.getElementById('nonsplash').style.display = 'none';</script>
+    {% include header.html %}
+    <div id="top" class="intro">
+        <div class="slider">
+          <div id="slide1" class="slide" style="background: url('{{ page.slider[0].image }}') center center no-repeat; background-size: cover;"></div>
+          <div id="slide2" class="slide" style="background: url('{{ page.slider[1].image }}') center center no-repeat; background-size: cover;"></div>
+          <div id="slide3" class="slide" style="background: url('{{ page.slider[2].image }}') center center no-repeat; background-size: cover;"></div>
+        </div>
+    </div>
+    <div class="textrow">“IL VERO OZIO DEV’ESSERE UNA SCELTA.” -ROBERTO GERVASIO</div>
+
+
+    <div class="bgimage" id="menu"><div>
+        <div class="container text-center">
+          <article>
+            <header class="post-header">
+              <h1 class="post-title">Menu</h1>
+            </header>
+            <div class="post-content">
+              <a class="btn btn-primary" href="{{ site.data.menu.food_path }}" target="_blank">Food</a> <a class="btn btn-primary" href="{{ site.data.menu.aperitivo_path }}" target="_blank">Aperitivo</a> <a class="btn btn-primary" href="{{ site.data.menu.wine_path }}" target="_blank">Wine</a>
+            </div>
+          </article>
+        </div>
+    </div></div>
+
+
+    <div class="light extras" id="catering">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-1"></div>
+            <div class="col-lg-8 col-md-10">
+                <article>
+                     
+                        <header class="post-header">
+                          <h1 class="post-title">Catering</h1>
+                        </header>
+                      
+                        <div class="post-content"><div class="editable"><p>For a party with family or friends or for a business meeting, you can rely on the catering services that l’Ozio provides for you. We are proud we can organize different kinds of catering in the real Italian style, with a wide choice of dishes both hot and cold.
+We bring to your home or office everything you need for the occasion... <a href="/catering">read more ›</a></p><br /></div>
+
+                          <div class="row">
+                            <div class="col-md-6"><h2>News</h2><div class="editable"><p>For all your news updates, blogs and events.<br />{% for post in site.posts | limit: 3 %}{{ post.date | date: "%d/%m/%Y" }} - <a href="{{ post.url }}" class="blog">{{ post.title }}</a><br />{% endfor %}<a href="/news">read more ›</a></p></div></div>
+                            <div class="col-md-6"><h2>Aperitivo</h2><div class="editable"><p>Aperitivo, ‘the pre-dinner Drink & Bite”, a little something to encourage you to feel hungry, to get the juices flowing, if you will, so you can fully enjoy your upcoming meal. Every day from 17:00 till 20.00 with an open buffet... <a href="/aperitivo">read more ›</a></p></div></div>
+                          </div>
+
+                        </div>
+
+
+                      
+                </article>
+            </div>
+            <div class="col-lg-2 col-md-1"></div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+<div class="textrow">“Yet it is in our idleness, in our dreams, that the submerged truth sometimes comes to the top.” -VIRGINIA WOOLF</div>
+
+  <div class="bgimage" id="gallery"><div>
+      <div class="container text-center">
+        <article>
+                        <header class="post-header">
+                          <h1 class="post-title editable">Gallery</h1>
+                        </header>
+
+                        <div class="gallery_images"><span id="prevbutton" onclick="galleryprev()" style="cursor: pointer;">‹</span><div>{% for image in page.images %}<a href="{{ page.url | remove: 'index.html' }}?url={{ image.image }}"><img src="//images.weserv.nl/?url=fancy-lion.cloudvent.net{{ image.image }}&w=250" /></a>{% endfor %}</div><span id="nextbutton" onclick="gallerynext()" style="cursor: pointer;">›</span></div>
+
+
+        </article>
+      </div>
+  </div></div>
+
+    <div class="light" id="contact">
+      <div class="container">
+      <article>
+        <div class="row">
+            <div class="col-xs-12">
+                
+                        <header class="post-header">
+                          <h1 class="post-title editable">Contact</h1>
+                        </header>
+            </div> 
+        </div>
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-8 col-md-9 col-sm-8">                            
+                <div id="map" onclick="window.open();"></div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 text-left" style="font-size: 16px; line-height: 1.8em;">{% include contactinfo.html %}</div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+
+   
+
+    {% include footer.html %}
+</div>
+  </body>
+
+</html>

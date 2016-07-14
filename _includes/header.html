@@ -1,0 +1,56 @@
+<div id="wrapall">
+<script>
+if(getParameterByName('url')) {
+    document.getElementById('wrapall').style.display='none';
+}
+</script>
+<header id="header" class="home">
+      <nav class="navbar navbar-default attop" role="navigation"><div>
+      <div class="textrow"><span class="abs hidden-xs">“VENITE A VIZIARVI CON NOI” -L’OZIO</span><div><div class="absright"><a href="http://www.ozioamsterdam.com"><img class="flag" src="/img/uk.png" /></a><a href="http://www.ozioitalia.it"><img class="flag" src="/img/it.png" /></a><a href="http://www.ozioamsterdam.nl""><img class="flag" src="/img/nl.png" /></a> <i class="fa icon-instagram-1" onclick="window.open('https://www.instagram.com/ozioamsterdam');" style="margin-right: 30px;"></i> <i class="fa icon-facebook" onclick="window.open('https://www.facebook.com/lozioamsterdam');"></i></div></div></div>
+        <div class="container">
+
+
+<div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+      <img src="/img/logofullwhite.svg">
+      <ul class="nav navmenu-nav">
+              <li><a href="/#top">Home</a></li>
+              <li><a href="/#menu">Menu</a></li>
+              <li {% if page.url == '/catering/' or page.url == '/catering/index.html' %}class="active"{% endif %}><a href="/#catering">Catering</a></li>
+              <li {% if page.url == '/aperitivo/' or page.url == '/aperitivo/index.html' %}class="active"{% endif %}><a href="/#catering">Aperitivo</a></li>
+              <li><a href="/#gallery">Gallery</a></li>
+              <li {% if page.url == '/about/' or page.url == '/about/index.html' %}class="active"{% endif %}><a href="/about/">About us</a></li>
+              <li><a href="/#contact">Contact</a></li>
+              <li {% if page.layout == 'post' or page.layout == 'blog' %}class="active"{% endif %}><a href="/news/">News</a></li>
+          
+      </ul>
+</div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/#top">
+              <img src="/img/logofull.svg">
+            </a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden-sm"><a href="#top">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li {% if page.url == '/catering/' or page.url == '/catering/index.html' %}class="active"{% endif %}><a href="#catering">Catering</a></li>
+              <li class="hidden-sm {% if page.url == '/aperitivo/' or page.url == '/aperitivo/index.html' %}active{% endif %}"><a href="/aperitivo">Aperitivo</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li {% if page.url == '/about/' or page.url == '/about/index.html' %}class="active"{% endif %}><a href="/about/">About us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li {% if page.layout == 'post' or page.layout == 'blog' %}class="active"{% endif %}><a href="/news/">News</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+        </div>
+      </nav>
+</header>
+    {% if page.layout != 'reservation' %}
+    <a href="/reservation/" id="reservation">Reservation</a>
+    <a href="https://www.foodora.nl/restaurant/s5do/a3m-brixia" id="foodora"><img src="/img/foodora.svg" /></a>
+    {% endif %}
