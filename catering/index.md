@@ -2,6 +2,10 @@
 title: Catering
 ---
 
-For a party with family or friends or for a business meeting, you can rely on the catering services that l’Ozio provides for you. We are proud we can organize different kinds of catering in the real Italian style, with a wide choice of dishes both hot and cold. We bring to your home or office everything you need for the occasion.
 
-For more information about the possibilities please [contact us](/#contact).
+##### &nbsp;
+
+*Voor een feestje met familie of vrienden of voor een zakelijke gelegenheid biedt het restaurant l’Ozio u diverse mogelijkheden voor een catering in Italiaanse stijl, met een ruime keuze aan gerechten, zowel warm als koud.
+<br>Wij brengen naar u thuis of op kantoor alles wat u nodig heeft voor de gelegenheid.*
+
+*Voor meer informatie over de mogelijkheden, neem contact op via info@ozioamsterdam.com of bel naar 0204780183**.*
