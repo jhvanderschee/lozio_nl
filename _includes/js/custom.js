@@ -129,7 +129,7 @@ $( document ).ready(function() {
 		    if($('.navmenu.offcanvas').hasClass('in')) $('.navbar-toggle').click();
 		    return false;
 		}
-		else if (!$('body').hasClass('home') && $(this).attr('target')!="blank") {
+		else if (!$('body').hasClass('home') && $(this).attr('target')!="_blank") {
 			if($(this).attr('href').charAt(0)!='/') $(this).attr('href', '/'+$(this).attr('href'));
 		}
 	});
