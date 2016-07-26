@@ -1,5 +1,5 @@
 ---
-title: Reservation
+title: Reserveren
 layout: reservation
 ---
 
