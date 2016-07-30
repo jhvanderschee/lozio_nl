@@ -204,5 +204,6 @@ $( document ).ready(function() {
     });
 
     setInterval(function(){ slide(); }, 6000);
+    setInterval(function(){ quotenext(); }, 6000);
     $(window).resize();
 });
