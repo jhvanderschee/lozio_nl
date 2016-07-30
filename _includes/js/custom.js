@@ -11,7 +11,7 @@ function galleryprev() {
 	$('.gallery_images > div').prepend($('.gallery_images > div a:nth-child(5)'));
 }
 function quotenext() {
-	$('.textrow').append($('.textrow > .quote:last-child'));
+	$('.textrow').prepend($('.textrow > .quote:last-child'));
 }
 
 
