@@ -12,7 +12,7 @@ function galleryprev() {
 }
 function quoterandom() {
 	$('.textrow .quote:first-child').each(function() {
-	    $(this).parent().prepend($('.textrow .quote:eq('+Math.floor((Math.random() * $(this).parent().find('.quote').length))+')'));
+	    $(this).parent().prepend($(this).parent().find('.quote:eq('+Math.floor((Math.random() * $(this).parent().find('.quote').length))+')'));
 	});
 }
 
