@@ -12,7 +12,6 @@ function galleryprev() {
 }
 function quotenext() {
 	$('.textrow').prepend($('.textrow > .quote:last-child'));
-	$('.textrow > .quote:last-child').remove();
 }
 
 
