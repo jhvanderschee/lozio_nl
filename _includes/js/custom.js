@@ -10,8 +10,10 @@ function gallerynext() {
 function galleryprev() {
 	$('.gallery_images > div').prepend($('.gallery_images > div a:nth-child(5)'));
 }
-function quotenext() {
-	$('.textrow .quote:first-child').parent().prepend($('.textrow .quote:last-child'));
+function quoterandom() {
+	$('.textrow .quote:first-child').each(function() {
+	    $(this).parent().prepend($('.textrow .quote:eq('+Math.floor((Math.random() * $(this).parent().find('.quote').length))+')'));
+	});
 }
 
 
@@ -204,6 +206,6 @@ $( document ).ready(function() {
     });
 
     setInterval(function(){ slide(); }, 6000);
-    setInterval(function(){ quotenext(); }, 6000);
+    quoterandom();
     $(window).resize();
 });
