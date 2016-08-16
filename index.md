@@ -9,4 +9,5 @@ images:
   - image: /img/gallery3.png
   - image: /img/gallery4.png
   - image: /img/gallery5.png
+  - image: /img/carlo pasta.png
 ---
