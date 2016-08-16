@@ -5,7 +5,6 @@ slider:
   - image: /img/food.jpg
   - image: /img/interior.jpg
 images:
-  - image: /img/casoncelli nero.jpg
   - image: /img/gallery2.png
   - image: /img/gallery3.png
   - image: /img/gallery4.png
