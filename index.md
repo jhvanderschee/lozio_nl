@@ -17,4 +17,5 @@ images:
   - image: /img/casoncelli nero.jpg
   - image: /img/wines.jpg
   - image: /img/ozio from front.jpg
+  - image: /img/downstairs small.jpg
 ---
