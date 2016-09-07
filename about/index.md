@@ -11,4 +11,4 @@ Wij zijn liefhebbers van het nietsdoen, Ozio, ‘dolce far niente’, met de vri
 
 Ons doel is een plek te cre&euml;ren waar je kan loungen, drinken, eten, in andere woorden een plek waar je tijd kan nemen voor jezelf.
 
-Ons restaurant ligt in het hartje van de Amsterdamse Pijp. Bij ons kan je terecht voor een uitgebreide lunch, dineren of om te borrelen. We hebben een priv&eacute; ruimte geschikt voor vergaderingen, diners of een klein feestje.
+Ons restaurant ligt in het hartje van de Amsterdamse Pijp. Bij ons kan je terecht voor een uitgebreide lunch, om te dineren of om te borrelen met een lekkere aperitief of een glas goede wijn. We hebben een priv&eacute; ruimte van alle gemakken voorzien, die geschikt is voor vergaderingen, presentaties, diners, groepen of een klein feestje.
