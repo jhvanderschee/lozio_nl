@@ -1,6 +1,6 @@
 ---
 title: Il Menu della Festa
-image: /uploads/kerst website.jpg
+image:
 ---
 
 
